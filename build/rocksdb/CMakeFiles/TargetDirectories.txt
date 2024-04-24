@@ -1,9 +1,0 @@
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/install.dir
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/list_install_components.dir
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/install/strip.dir
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/install/local.dir
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/rocksdb-shared.dir
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/build_version.dir
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/rocksdb.dir
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/edit_cache.dir
-/home/tom/kujacoin-28.3/build/rocksdb/CMakeFiles/rebuild_cache.dir

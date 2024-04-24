@@ -1,4 +1,0 @@
-/home/tom/kujacoin-28.3/build/leveldb/CMakeFiles/rebuild_cache.dir
-/home/tom/kujacoin-28.3/build/leveldb/CMakeFiles/leveldb.dir
-/home/tom/kujacoin-28.3/build/leveldb/CMakeFiles/edit_cache.dir
-/home/tom/kujacoin-28.3/build/leveldb/CMakeFiles/leveldbutil.dir
