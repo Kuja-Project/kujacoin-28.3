@@ -18,7 +18,7 @@ namespace CryptoNote
 {
     namespace parameters
     {
-        const uint64_t DIFFICULTY_TARGET = 30; // seconds
+        const uint64_t DIFFICULTY_TARGET = 210; // seconds
 
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER = 500000000;
 
@@ -26,7 +26,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 3914525;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 23382;
 
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 40;
 
@@ -41,7 +41,7 @@ namespace CryptoNote
         const size_t BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V3 = 11;
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY = UINT64_C(100000000000000);
+        const uint64_t MONEY_SUPPLY = UINT64_C(17693000000000);
 
         const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX = 187000;
 
@@ -107,15 +107,15 @@ namespace CryptoNote
         /* This section defines our minimum and maximum mixin counts required for transactions */
         const uint64_t MINIMUM_MIXIN_V1 = 0;
 
-        const uint64_t MAXIMUM_MIXIN_V1 = 100;
+        const uint64_t MAXIMUM_MIXIN_V1 = 50;
 
-        const uint64_t MINIMUM_MIXIN_V2 = 7;
+        const uint64_t MINIMUM_MIXIN_V2 = 5;
 
-        const uint64_t MAXIMUM_MIXIN_V2 = 7;
+        const uint64_t MAXIMUM_MIXIN_V2 = 5;
 
-        const uint64_t MINIMUM_MIXIN_V3 = 3;
+        const uint64_t MINIMUM_MIXIN_V3 = 2;
 
-        const uint64_t MAXIMUM_MIXIN_V3 = 3;
+        const uint64_t MAXIMUM_MIXIN_V3 = 2;
 
         /* The heights to activate the mixin limits at */
         const uint32_t MIXIN_LIMITS_V1_HEIGHT = 440000;
@@ -193,7 +193,7 @@ namespace CryptoNote
         /* For new projects forked from this code base, the values immediately below
            should be changed to 0 to prevent issues with transaction processing
            and other possible unexpected behavior */
-        const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 1400000;
+        const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 0;
 
         const uint64_t BLOCK_BLOB_SHUFFLE_CHECK_HEIGHT = 1600000;
 
@@ -254,28 +254,11 @@ namespace CryptoNote
 
         /* Block heights we are going to have hard forks at */
         const uint64_t FORK_HEIGHTS[] = {
-            187000, // 0
-            350000, // 1
-            440000, // 2
-            620000, // 3
-            700000, // 4
-            800000, // 5
-            1000000, // 6
-            1200000, // 7
-            1300000, // 8
-            1400000, // 9
-            1600000, // 10
-            1800000, // 11
-            2000000, // 12
-            2200000, // 13
-            2400000, // 14
-            2600000, // 15
-            2800000, // 16
-            3000000, // 17
+    
         };
 
         /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 16;
+        const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX = 1;
 
         const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
@@ -303,7 +286,7 @@ namespace CryptoNote
         const char MINER_CONFIG_FILE_NAME[] = "miner_conf.json";
     } // namespace parameters
 
-    const char CRYPTONOTE_NAME[] = "TurtleCoin";
+    const char CRYPTONOTE_NAME[] = "Kujacoin";
 
     const uint8_t TRANSACTION_VERSION_1 = 1;
 
@@ -336,9 +319,9 @@ namespace CryptoNote
     const uint64_t BLOCKS_SYNCHRONIZING_DEFAULT_COUNT = 100; // by default, blocks count in blocks downloading
     const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 1000;
 
-    const int P2P_DEFAULT_PORT = 11897;
+    const int P2P_DEFAULT_PORT = 16553;
 
-    const int RPC_DEFAULT_PORT = 11898;
+    const int RPC_DEFAULT_PORT = 16552;
 
     const int SERVICE_DEFAULT_PORT = 8070;
 
@@ -384,20 +367,16 @@ namespace CryptoNote
     const uint64_t LEVELDB_MAX_OPEN_FILES = 128; // 128 files
     const uint64_t LEVELDB_MAX_FILE_SIZE_MB = 1024; // 1024MB = 1GB
 
-    const char LATEST_VERSION_URL[] = "http://latest.turtlecoin.lol";
+    const char LATEST_VERSION_URL[] = "http://latest.kujacoin.com";
 
-    const std::string LICENSE_URL = "https://github.com/turtlecoin/turtlecoin/blob/master/LICENSE";
+    const std::string LICENSE_URL = "https://github.com/TomO2015/kujacoin-28.3/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
-        {0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x57, 0x41, 0x65, 0xf9, 0x91, 0xa4, 0xb6, 0xc1, 0x43, 0xe9}};
+        {0xa4, 0x0b, 0x3a, 0x5c, 0xcf, 0x51, 0x56, 0x40, 0x64, 0xf8, 0x90, 0xa3, 0xb5, 0xc0, 0x42, 0xe8}};
 
     const char *const SEED_NODES[] = {
-        "206.189.142.142:11897", // rock
-        "145.239.88.119:11897", // cision
-        "165.227.252.132:11897", // iburnmycd
-        "148.251.178.238:11897", // hv
-        "45.32.138.7:11897", // extra
-        "46.214.70.196:11897", // CuveeRO
-        "94.113.119.122:11897" // CuveeCZ
+        "172.233.120.125:16553",
+        "10.0.2.15:16553",
+        "172.233.121.153:16553" // linode ports 16553
     };
 } // namespace CryptoNote
