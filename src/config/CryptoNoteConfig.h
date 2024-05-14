@@ -376,6 +376,6 @@ namespace CryptoNote
     const char *const SEED_NODES[] = {
         "172.233.120.125:16553",
         "10.0.2.15:16553",
-        "172.233.121.197:16553" // linode ports 16553
+        "172.233.121.197:16553", // linode ports 16553
     };
 } // namespace CryptoNote
